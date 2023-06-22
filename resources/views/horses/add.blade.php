@@ -17,7 +17,7 @@
     Coat: <input type="text" name="coat">
     <br>
 
-    <button type="button" class="btn btn-outline-success">New Horse</button>
+    <button type="submit" class="btn btn-outline-success">New Horse</button>
 </form>
 </div>
 
