@@ -9,7 +9,10 @@
             <h5 class="card-title">{{ $horse->name }}</h5>
             <p class="card-text">Típusa: {{ $horse->breed }}
                 <br>
-            Szörméje: {{ $horse->coat }}</p>
+            Szörméje: {{ $horse->coat }}
+        <br>
+        {{ $horse->gender }}
+    </p>
             </div>
         </div>
         @endforeach
