@@ -17,7 +17,7 @@
     <br>
     Number: <input type="number" name="number" value="{{ $stable->number }}">
     <br>
-    Phone: <input type="number" name="number" value="{{ $stable->phone }}">
+    Phone: <input type="tel" name="phone" value="{{ $stable->phone }}">
     <br>
 
     <button class="btn btn-primary" type="submit">Send</button>

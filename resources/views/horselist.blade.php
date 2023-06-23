@@ -8,10 +8,12 @@
         <form action="{{ route('horse', ['id' => $horse->id])}}" method="post" enctype="multipart/form-data">
             @csrf
             <input type="hidden" value="{{ $horse->id }}" name="horse_id">
-            <img src="https://images.pexels.com/photos/357321/pexels-photo-357321.jpeg" class="card-img-top" alt="...">
+            <img src="https://images.pexels.com/photos/13745207/pexels-photo-13745207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">{{ $horse->name }}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">Típusa: {{ $horse->breed }}
+                <br>
+        {{ $horse->gender }}<br></p>
             <button class="btn btn-primary" type="submit">Tovább</button>
             </div>
         </form>

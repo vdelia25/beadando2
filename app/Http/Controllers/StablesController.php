@@ -100,7 +100,7 @@ class StablesController extends Controller
      } 
     else{
         if (Auth::user()->role == '1') {
-            $stable = DB::select('SELECT * from stables where id=?', [$id]);
+            $stable = DB::select('SELECT * from stable where id=?', [$id]);
             return view('stables.edit', ['stables'=>$stable], ['id'=>$id]);
         }
         else{
@@ -122,7 +122,7 @@ class StablesController extends Controller
             $street=$request->get('street');
             $number=$request->get('number');
             $phone=$request->get('phone');
-        DB::update('update stables set name=?, county=?, city=?, street=?, number=?, phone=?, where id=?', [$name, $county,
+        DB::update('update stable set name=?, county=?, city=?, street=?, number=?, phone=? where id=?', [$name, $county,
         $city, $street, $number, $phone, $id]);
         $stable=Stables::all();
         return view('stables.index')->with('stables', $stable);

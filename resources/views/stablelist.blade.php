@@ -11,7 +11,17 @@
         <img src="https://images.pexels.com/photos/357321/pexels-photo-357321.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">{{ $stable->name }}</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <p class="card-text">
+            {{ $stable->county }}
+            <br>
+            {{ $stable->city }}
+            <br>
+            {{ $stable->street }}
+            <br>
+            {{ $stable->number }}
+            <br>
+            {{ $stable->phone }}<br>
+        </p>
         <button class="btn btn-primary" type="submit">Tovább</button>
         </div>
     </form>
